@@ -10,6 +10,7 @@ export const getTodos = async (): Promise<AxiosResponse<ApiDataType>> => {
     return todos;
   } catch (error) {
     console.log(error);
+    throw error;
   }
 };
 
@@ -23,12 +24,13 @@ export const addTodo = async (
       status: false,
     };
     const saveTodo: AxiosResponse<ApiDataType> = await axios.post(
-      baseUrl + "add-todo",
+      baseUrl + "/add-todo",
       todo
     );
     return saveTodo;
   } catch (error) {
     console.log(error);
+    throw new Error(error);
   }
 };
 
@@ -46,6 +48,7 @@ export const updateTodo = async (
     return updatedTodo;
   } catch (error) {
     console.log(error);
+    throw error;
   }
 };
 
@@ -54,10 +57,11 @@ export const deleteTodo = async (
 ): Promise<AxiosResponse<ApiDataType>> => {
   try {
     const deletedTodo: AxiosResponse<ApiDataType> = await axios.delete(
-      `${baseUrl}/delete-todo/${id}`
+      `${baseUrl}/delete-todo/${_id}`
     );
     return deletedTodo;
   } catch (error) {
     console.log(error);
+    throw error;
   }
 };
