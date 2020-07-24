@@ -2,8 +2,10 @@ import { Response, Request } from "express";
 import { ITodo } from "./../../types/todo";
 import Todo from "../../models/todo";
 
+
 const getTodos = async (req: Request, res: Response): Promise<void> => {
   try {
+    console.log("get")
     const todos: ITodo[] = await Todo.find();
     res.status(200).json({ todos });
   } catch (error) {
@@ -13,6 +15,7 @@ const getTodos = async (req: Request, res: Response): Promise<void> => {
 
 const addTodo = async (req: Request, res: Response): Promise<void> => {
   try {
+    console.log("add")
     const body = req.body as Pick<ITodo, "name" | "description" | "status">;
     const todo: ITodo = new Todo({
       name: body.name,
@@ -26,12 +29,13 @@ const addTodo = async (req: Request, res: Response): Promise<void> => {
       .status(201)
       .json({ message: "Todo added", todo: newTodo, todos: allTodos });
   } catch (error) {
-    console.log(error);
+    throw error;
   }
 };
 
 const updateTodo = async (req: Request, res: Response): Promise<void> => {
   try {
+    console.log("update")
     const {
       params: { id },
       body,
@@ -47,12 +51,13 @@ const updateTodo = async (req: Request, res: Response): Promise<void> => {
       todos: allTodos,
     });
   } catch (error) {
-    console.log(error);
+    throw error;
   }
 };
 
 const deleteTodo = async (req: Request, res: Response): Promise<void> => {
   try {
+    console.log("delete")
     const deletedTodo: ITodo | null = await Todo.findByIdAndRemove(
       req.params.id
     );
@@ -63,7 +68,7 @@ const deleteTodo = async (req: Request, res: Response): Promise<void> => {
       todos: allTodos,
     });
   } catch (error) {
-    console.log(error);
+    throw error;
   }
 };
 
