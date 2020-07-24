@@ -4,10 +4,14 @@
   "description": "A todo app built with MERN stack and TypeScript",
   "main": "index.js",
   "dependencies": {
+    "axios": "^0.19.2",
     "cors": "^2.8.5",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "mongoose": "^5.9.25",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-scripts": "3.4.1",
     "typescript": "^3.9.7"
   },
   "devDependencies": {
@@ -16,11 +20,13 @@
     "@types/mongoose": "^5.7.32",
     "@types/node": "^14.0.25",
     "concurrently": "^5.2.0",
-    "nodemon": "^2.0.4"
+    "nodemon": "^2.0.4",
+    "@types/react": "^16.9.43",
+    "@types/react-dom": "^16.9.8"
   },
   "scripts": {
-    "build": "tsc",
-    "start": "concurrently \"tsc -w\" \"nodemon dist/js/app.js\""
+    "build": "tsc && react-scripts build",
+    "start": "concurrently \"tsc -w\" \"nodemon dist/js/app.js\" \"react-scripts start\""
   },
   "repository": {
     "type": "git",
