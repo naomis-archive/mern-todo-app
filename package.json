@@ -1,0 +1,11 @@
+{
+  "name": "mern-todo-app-server",
+  "version": "1.0.0",
+  "description": "",
+  "dependencies": {
+    "concurrently": "^5.2.0"
+  },
+  "scripts": {
+      "start": "concurrently \"npm start --prefix server\" \"npm start --prefix client\""
+  }
+}
