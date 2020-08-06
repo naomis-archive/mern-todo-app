@@ -6,7 +6,8 @@
     "concurrently": "^5.2.0"
   },
   "scripts": {
-      "build": "npm run build --prefix server",
-      "start": "concurrently \"npm start --prefix server\" \"npm start --prefix client\""
+    "heroku-prebuild": "npm install --prefix server",
+    "build": "npm run build --prefix server",
+    "start": "concurrently \"npm start --prefix server\" \"npm start --prefix client\""
   }
 }
