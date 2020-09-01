@@ -1,0 +1,4 @@
+"status: awaiting review":
+  - '**'      # index.php | src/main.php
+  - '.*'      # .gitignore
+  - '.*/**'   # .github/workflows/label.yml
