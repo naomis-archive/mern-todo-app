@@ -10,8 +10,8 @@ assignees: nhcarrigan
 
 ## Describe the work
 
-A clear and concise description of what work should be done.
+<!--A clear and concise description of what work should be done.-->
 
 ## Additional information
 
-Add any other context about the problem here.
+<!--Add any other context about the problem here.-->

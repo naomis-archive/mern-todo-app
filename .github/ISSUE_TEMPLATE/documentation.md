@@ -10,12 +10,12 @@ assignees: nhcarrigan
 
 ## Describe the error
 
-A clear and concise description of the incorrect documentation information.
+<!--A clear and concise description of the incorrect documentation information.-->
 
 ## Expected information
 
-A clear and concise description of what the documentation *should* say.
+<!--A clear and concise description of what the documentation *should* say.-->
 
 ## Additional information
 
-Add any other context about the problem here.
+<!--Add any other context about the problem here.-->
