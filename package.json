@@ -2,6 +2,7 @@
   "name": "mern-todo-app-server",
   "version": "1.0.0",
   "description": "",
+  "license": "AGPL-3.0-or-later",
   "dependencies": {
     "concurrently": "^5.2.0"
   },
