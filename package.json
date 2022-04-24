@@ -2,7 +2,7 @@
   "name": "mern-todo-app",
   "version": "1.0.0",
   "description": "A MERN powered TODO App",
-  "author": "Nicholas Carrigan",
+  "author": "Naomi Carrigan",
   "license": "AGPL-3.0-or-later",
   "dependencies": {
     "concurrently": "^5.2.0"

@@ -30,7 +30,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- markdownlint-disable -->
 <table>
   <tr>
-    <td align="center"><a href="http://www.nhcarrigan.com"><img src="https://avatars1.githubusercontent.com/u/63889819?v=4" width="100px;" alt=""/><br /><sub><b>Nicholas Carrigan (he/him)</b></sub></a><br /><a href="#projectManagement-nhcarrigan" title="Project Management">📆</a></td>
+    <td align="center"><a href="http://www.nhcarrigan.com"><img src="https://avatars1.githubusercontent.com/u/63889819?v=4" width="100px;" alt=""/><br /><sub><b>Naomi Carrigan</b></sub></a><br /><a href="#projectManagement-nhcarrigan" title="Project Management">📆</a></td>
   </tr>
 </table>
 
@@ -42,7 +42,7 @@ This project follows the [all-contributors](https://github.com/all-contributors/
 
 ## Licensing
 
-Copyright (C) 2020 Nicholas Carrigan
+Copyright (C) 2020 Naomi Carrigan
 
 This program is free software: you can redistribute it and/or modify it under the terms of the GNU Affero General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
 
